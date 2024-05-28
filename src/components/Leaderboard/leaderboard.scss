@@ -1,0 +1,54 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 600px) {
+      margin-top: 100px;
+    }
+}  
+.heading {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 50px;
+    width: 100%;
+    @media (max-width: 600px) {
+      font-size: 30px;
+    }
+}  
+.btn {
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: #5cabb0;
+    color: white;
+    border: none;  
+    &:hover {
+      transition-duration: 0.3s;
+      background-color: #0f6f75;
+      color: white;
+    }
+}
+.chat {
+    background-color: #5cabb0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    bottom: -10px;
+    right: 2%;
+    z-index: 1;
+    bottom: 10px;
+    position: fixed;
+    cursor: pointer;
+    @media (max-width: 600px) {
+      right: 10px;
+      bottom: 20px;
+    }
+}
